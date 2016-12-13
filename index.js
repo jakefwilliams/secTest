@@ -5,7 +5,7 @@
 const co = require('co');
 
 co(function*() {
-	readFile("test.asp").then(function(contents) {
+	readFile("nothing.asp").then(function(contents) {
 	  console.log(contents);
 	});
 });
