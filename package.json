@@ -1,0 +1,23 @@
+{
+  "name": "incRun",
+  "version": "10000.0.0",
+  "description": "Loops through all asp files and adds a version of sec if one isn't included and adds SQLCheck if it isn't included",
+  "main": "index.js",
+  "bin": {
+    "incRun": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakefwilliams/secTest.git"
+  },
+  "keywords": [],
+  "author": "Jake Williams jake.williams@webappuk.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakefwilliams/secTest/issues"
+  },
+  "homepage": "https://github.com/jakefwilliams/secTest#readme"
+}
