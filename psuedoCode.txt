@@ -1,0 +1,89 @@
+// make SQLCheck, SubSec.asp, SecDeep.asp, ErrNew.asp
+
+// SecDeep.asp, SubSec.asp and Sec.js should nearly always be the same so just include them in the package will need to copy them over though
+
+----------------------------------------------------------------sqlcheck and errnew--------------------------------------------------------------
+
+// generate SQLCheck.asp
+//   open Std.asp 
+//	   extract any functions that start with SQL or SQR
+//	   put them in SQLCheck.asp
+//     remove them from sec.asp
+//     save file to Website folder
+
+// generate ErrNew.asp
+//   open Std.asp
+//     extract the ErrNew function
+//     remove it from sec.asp
+//     place it in ErrNew.asp
+//     save file to Website folder
+
+// place SQLCheck.asp and ErrNew.asp in Std.asp
+
+----------------------------------------------------------------sqlcheck and errnew--------------------------------------------------------------
+// open a read/write connection to Std.asp
+// if ErrNew.asp isn't included
+//   include it
+//  if SQLCheck.asp isn't included
+//	 include it
+// if SQLCheck.asp exists
+//   open a read/write connection to it
+// else
+//   create new SQLCheck.asp and add open a write connection to it
+// if ErrNew.asp exists
+//   open a read/write connection to it
+// else
+//   create new SQLCheck.asp and add open a write connection to it
+// go through sec.asp
+//   if we come across a function that has the name SQl* or SQR*
+//     copy function into SQLCheck.asp
+//     remove function from Std.asp
+// close connection to SQLCheck.asp
+// close connection to ErrNew.asp
+// close connection to Std.asp
+
+---------------------------------------------------------------sec inclusion----------------------------------------------------
+
+// get a list of all asp pages
+// loop through pages
+//   if the page uses the DB
+//     include SQLCheck.asp
+//   if *sec.asp exists
+//     check if we need sec.js, sec.asp, secdeep.asp
+//       include the one we need
+//     get a list of all of the asp pages we include
+//     loop through those pages
+//       if sec.asp is included
+//         remove the inclusion
+//     check if subsec.asp or sec
+
+//
+//     get a list of the asp files the page includes
+//     loop through inc pages
+//       if any sec.asp exists
+//         remove it
+//       add subsec.asp or secDeep.asp with checkUID(path) if they aren't already there
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
